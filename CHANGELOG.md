@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add option `combine_input_fields` in `SnliDatasetReader` to support only having "non-entailment" and "entailment" as output labels.
 - Made all the models run on AllenNLP 2.1
 - Add option `ignore_loss_on_o_tags` in `CrfTagger` to set the flag outside its forward function.
+- Add `make_output_human_readable` for pair classification models (`BiMpm`, `DecomposableAttention`, and `ESIM`).
 
 ### Fixed
 
@@ -29,6 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated `QaNet` and `NumericallyAugmentedQaNet` models to remove bias for layers that are followed by normalization layers.
 - Updated the model cards for `rc-naqanet`, `vqa-vilbert` and `ve-vilbert`.
 - Predictors now work for the vilbert-multitask model.
+- Support unlabeled instances in `SnliDatasetReader`.
 
 
 ## [v2.1.0](https://github.com/allenai/allennlp-models/releases/tag/v2.1.0) - 2021-02-24
